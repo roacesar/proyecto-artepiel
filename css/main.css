@@ -114,6 +114,21 @@ header {
 /*menu*/
 nav {
   border-top: 1px solid #E4E4E4;
+  display: flex;
+}
+nav svg {
+  fill: #322016;
+}
+nav #sidebar-active {
+  display: none;
+}
+nav .open-sidebar-button, nav .close-sidebar-button {
+  display: none;
+}
+nav .links-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 nav ul {
   display: flex;
@@ -152,8 +167,41 @@ nav ul li .menu-actual {
   header {
     padding: 32px 24px;
   }
-  nav {
+  nav .links-container {
     display: none;
+    flex-direction: column;
+    position: fixed;
+    background-color: #ffffff;
+    padding: 0px 16px 32px 16px;
+    z-index: 100;
+  }
+  nav .open-sidebar-button, nav .close-sidebar-button {
+    display: inline-block;
+    margin: auto;
+    padding: 12px;
+  }
+  nav .open-sidebar-button:hover, nav .close-sidebar-button:hover {
+    cursor: pointer;
+  }
+  nav #sidebar-active:checked ~ .links-container {
+    display: flex;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 24px;
+  }
+  nav ul li {
+    list-style: none;
+    display: contents;
+  }
+  nav ul li a {
+    justify-content: center;
+  }
+  nav ul li a:hover {
+    border: none;
+  }
+  nav ul li .menu-actual {
+    border: none;
   }
 }
 /*footer*/

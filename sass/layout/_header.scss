@@ -7,6 +7,25 @@ header {
 /*menu*/
 nav {
     border-top: 1px solid $colorGray;
+    display: flex;
+
+    svg {
+        fill: $colorBrown;
+    }
+
+    #sidebar-active {
+        display: none;
+    }
+
+    .open-sidebar-button, .close-sidebar-button {
+        display: none;
+    }
+
+    .links-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 
     ul {
         display: flex;
@@ -53,6 +72,49 @@ nav {
     }
 
     nav {
-        display: none;
+        .links-container {
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            background-color: $colorWhite;
+            padding: 0px 16px 32px 16px;
+            z-index: 100;
+        }
+
+        .open-sidebar-button, .close-sidebar-button {
+            display: inline-block;
+            margin: auto;
+            padding: 12px;
+        }
+
+        .open-sidebar-button:hover, .close-sidebar-button:hover {
+            cursor: pointer;
+        }
+
+        #sidebar-active:checked ~ .links-container {
+            display: flex;
+        }
+
+        ul {
+            flex-direction: column;
+            gap: 24px;
+
+            li {
+                list-style: none;
+                display: contents;
+    
+                a {
+                    justify-content: center;
+                }
+    
+                a:hover {
+                    border: none;
+                }
+    
+                .menu-actual {
+                    border: none;
+                }
+            }
+        }
     }
 }
