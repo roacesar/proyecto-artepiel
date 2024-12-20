@@ -1,0 +1,17 @@
+/*title*/
+.title {
+    padding: 96px;
+    border-top: 1px solid $colorGray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/*media title*/
+@media screen and (max-width: $mediaMobile) {
+    .title {
+        padding: 48px 16px;
+    }
+}

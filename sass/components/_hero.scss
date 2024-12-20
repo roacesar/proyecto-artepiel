@@ -1,0 +1,24 @@
+.hero-banner {
+    height: 776px;
+    background: no-repeat url(../images/img-header.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $colorWhite;
+    text-align: center;
+    gap: 8px;
+}
+
+.hero-banner h1 {
+    color: $colorWhite;
+    max-width: 400px;
+}
+
+/*media hero*/
+@media screen and (max-width: $mediaMobile) {
+    .hero-banner {
+        height: 740px;
+    }
+}

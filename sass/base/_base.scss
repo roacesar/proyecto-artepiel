@@ -1,0 +1,96 @@
+/*base*/
+body {
+    background-color: $colorWhite;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "BIZ UDPMincho", serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h1 {
+    color: $colorTextDark;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h2 {
+    color: $colorTextDark;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 2%;
+}
+
+.h2-light {
+    color: $colorTextLight;
+}
+
+h3 {
+    color: $colorTextDark;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 2%;
+}
+
+.h3-dark {
+    color: $colorWhite;
+}
+
+p {
+    font-family: "Source Sans 3", sans-serif;
+    color: $colorTextMedium;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 4%;
+}
+
+.p-small {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 4%;
+}
+
+.highlight {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 400px;
+    color: $colorWhite;
+    letter-spacing: 4%;
+}
+
+.highlight-dark {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 400px;
+    color: $colorTextLight;
+    letter-spacing: 4%;
+}
+
+/*media base*/
+@media screen and (max-width: $mediaMobile) {   
+    h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    h3 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

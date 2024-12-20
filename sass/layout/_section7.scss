@@ -1,0 +1,39 @@
+/*section7*/
+.one-column {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 96px 96px 96px;
+    gap: 96px;
+
+    .img-apoyo {
+        width: 100%;
+        height: 400px;
+        filter: grayscale(100);
+        object-fit: cover;
+    }
+
+    .one-column-bottom {
+        margin: auto;
+        width: 640px;
+        text-align: center;
+    }
+}
+
+/*media section7*/
+@media screen and (max-width: $mediaMobile) {
+    .one-column {
+        padding: 0px;
+        gap: 0px;
+
+        .img-apoyo {
+            width: 100%;
+            height: 320px;
+        }
+
+        .one-column-bottom {
+            text-align: left;
+            width: 100%;
+            padding: 48px 16px;
+        }
+    }
+}

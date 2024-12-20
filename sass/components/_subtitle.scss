@@ -1,0 +1,17 @@
+/*subtitle*/
+.subtitle {
+    padding: 96px;
+    border-top: 1px solid $colorGray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/*media subtitle*/
+@media screen and (max-width: $mediaMobile) {
+    .subtitle {
+        padding: 48px 16px;
+    }
+}

@@ -1,0 +1,16 @@
+/*section3*/
+.two-columns-products {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+    padding: 0px 96px 96px 96px;
+    gap: 96px;
+}
+
+/*media section3*/
+@media screen and (max-width: $mediaMobile) {
+    .two-columns-products {
+        grid-template-columns: minmax(0,1fr);
+        padding: 0px 16px 48px 16px;
+        gap: 16px;
+    }
+}

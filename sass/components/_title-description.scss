@@ -1,0 +1,18 @@
+/*title description*/
+.title-description {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0px 96px 96px 96px;
+    max-width: 640px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+/*media title description*/
+@media screen and (max-width: $mediaMobile) {
+    .title-description {
+        padding: 0px 16px 48px 16px;
+    }
+}

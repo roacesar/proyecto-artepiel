@@ -9,8 +9,7 @@
 /* GENERALES */
 
 body {
-    background: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -97,7 +96,7 @@ p {
 }
 
 .link-container:hover {
-    a{color: #484441;}
+    color: #484441;
     border-bottom: 1px solid #484441;
 }
 
@@ -119,7 +118,7 @@ p {
 }
 
 .link-container-dark:hover {
-    a{color: #fff;}
+    color: #fff;
     border-bottom: 1px solid #fff;
 }
 
@@ -132,6 +131,7 @@ header {
 
 nav {
     border-top: 1px solid #E4E4E4;
+    margin-bottom: -16px;
 }
 
 nav ul {
@@ -225,11 +225,8 @@ nav ul li a:hover {
 }
 
 .three-columns {
-    display: flex;
-}
-
-.services-card {
-    width:calc(100%/3);
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
 }
 
 .img-services {
@@ -249,13 +246,13 @@ nav ul li a:hover {
 /* SECTION 03 */
 
 .two-columns-products {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
     padding: 0px 96px 96px 96px;
     gap: 96px;
 }
 
 .product-card {
-    width: 50%;
     background-image: url(../images/img-header.jpg);
     background-size: cover;
     height: 480px;
@@ -274,7 +271,8 @@ nav ul li a:hover {
     padding: 0 96px 96px 96px;
     display: flex;
     gap: 96px;
-    justify-content: center
+    justify-content: center;
+    width: 100%;;
 }
 
 .client {

@@ -1,0 +1,63 @@
+/*buttons*/
+.link-container {
+    height: 32px;
+    border-bottom: 1px solid $colorGray;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+
+    a {
+        color: $colorTextMedium;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.link-container:hover {
+    color: $colorTextDark;
+    border-bottom: 1px solid $colorTextDark;
+}
+
+.link-container-dark {
+    height: 32px;
+    border-bottom: 1px solid $colorTextMedium;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+
+    a {
+        color: $colorWhite;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.link-container-dark:hover {
+    color: $colorWhite;
+    border-bottom: 1px solid $colorWhite;
+}
+
+.button {
+    background-color: $colorTextDark;
+    font-family: "Source Sans 3", sans-serif;
+    color: $colorWhite;
+    height: 48px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 4%;
+    cursor: pointer;
+    padding: 0px 24px;
+}
+
+.button:hover {
+    background-color: $colorBrown;
+    transition: background-color 0.5s ease;
+}

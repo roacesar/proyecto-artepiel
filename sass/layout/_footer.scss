@@ -1,0 +1,104 @@
+/*footer*/
+footer {
+    background: $colorTextDark;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        padding-bottom: 48px;
+        border-bottom: 1px solid $colorTextMedium;
+
+        li {
+            list-style: none;
+
+            a {
+                color: $colorWhite;
+                font-family: "BIZ UDPMincho", serif;
+                font-size: 10px;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 1.1px;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+            
+        }
+    }
+
+    .rrss-icons {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: center;
+        gap: 48px;
+
+        .footer-info-card {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            text-align: center;
+        }
+    }
+
+    p {
+        color: $colorWhite;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    h6 {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 4%;
+        font-weight: 600;
+        color: $colorWhite;
+        font-family: "Source Sans 3", sans-serif;
+    }
+
+    .footer-copyright {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+    }
+}
+
+/*media footer*/
+@media screen and (max-width: $mediaMobile) {
+    footer {
+        padding: 48px 16px;
+        gap: 32px;
+
+        ul {
+            flex-wrap: wrap;
+            gap: 16px;
+            padding-bottom: 32px;
+        }
+    
+        .footer-info {
+            flex-direction: column;
+            gap: 24px;
+        }
+    
+        .footer-copyright {
+            flex-direction: column;
+            gap: 8px;
+            text-align: center;
+
+            img {
+                height: 9px;
+            }
+        }
+    }
+}

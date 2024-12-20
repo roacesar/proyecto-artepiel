@@ -1,0 +1,21 @@
+/*product card*/
+.product-card {
+    background-image: url(../images/img-header.jpg);
+    background-size: cover;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 48px;
+    filter: grayscale(1);
+}
+
+/*media product card*/
+@media screen and (max-width: $mediaMobile) {
+    .product-card {
+        padding: 32px 24px;
+        height: 320px;
+    }
+}

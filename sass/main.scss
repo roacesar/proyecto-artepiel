@@ -1,0 +1,27 @@
+/*abstracts*/
+@import './abstracts/variables';
+
+/*base*/
+@import './base/resets';
+@import './base/base';
+
+/*layout*/
+@import './layout/header';
+@import './layout/footer';
+@import './layout/section1';
+@import './layout/section2';
+@import './layout/section3';
+@import './layout/section4';
+@import './layout/section5';
+@import './layout/section6';
+@import './layout/section7';
+@import './layout/form';
+
+/*components*/
+@import './components/hero';
+@import './components/subtitle';
+@import './components/productcard';
+@import './components/buttons';
+@import './components/title';
+@import './components/map';
+@import './components/title-description';

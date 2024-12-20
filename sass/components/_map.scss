@@ -1,0 +1,12 @@
+/*map*/
+.map-g {
+    width: 100%;
+    height: 560px;
+}
+
+/*media map*/
+@media screen and (max-width: $mediaMobile) {
+    .map-g {
+        height: 320px;
+    }
+}
